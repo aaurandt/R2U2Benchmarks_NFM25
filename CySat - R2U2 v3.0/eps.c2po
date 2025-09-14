@@ -34,6 +34,14 @@ ATOMIC
     Battery_Cell_Temp_2_GT_1 := Battery_Cell_Temp_2 > 1.0;
     Battery_Cell_Temp_3_GT_1 := Battery_Cell_Temp_3 > 1.0;
     Battery_Cell_Temp_4_GT_1 := Battery_Cell_Temp_4 > 1.0;
+    Battery_Cell_Temp_1_RC_LT_1 := rate(Battery_Cell_Temp_1) < 1.0;
+    Battery_Cell_Temp_2_RC_LT_1 := rate(Battery_Cell_Temp_2) < 1.0;
+    Battery_Cell_Temp_3_RC_LT_1 := rate(Battery_Cell_Temp_3) < 1.0;
+    Battery_Cell_Temp_4_RC_LT_1 := rate(Battery_Cell_Temp_4) < 1.0;
+    Battery_Cell_Temp_1_RC_GT_M1 := rate(Battery_Cell_Temp_1) > -1.0;
+    Battery_Cell_Temp_2_RC_GT_M1 := rate(Battery_Cell_Temp_2) > -1.0;
+    Battery_Cell_Temp_3_RC_GT_M1 := rate(Battery_Cell_Temp_3) > -1.0;
+    Battery_Cell_Temp_4_RC_GT_M1 := rate(Battery_Cell_Temp_4) > -1.0;
     Num_Under_Voltage_RC := rate(Num_Under_Voltage) == 0.0;
     Num_Short_Circuit_RC := rate(Num_Short_Circuit) == 0.0;
     Num_Over_Temp_RC := rate(Num_Over_Temp) == 0.0;
